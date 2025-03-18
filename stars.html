@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التقييمات - سفاحين العرب</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+
+        .reviews-container {
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        .reviews-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: red;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        .reviews-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .review-box {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+
+        .review-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+        }
+
+        .review-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid red;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+            margin-bottom: 10px;
+        }
+
+        .review-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .review-text {
+            font-size: 16px;
+            color: #ddd;
+            margin-bottom: 10px;
+        }
+
+        .stars {
+            color: gold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">سفاحين العرب</div>
+        <nav>
+            <a href="web.html">الرئيسية</a>
+            <a href="rules.html">القوانين</a>
+            <a href="store.html">المتجر</a>
+            <a href="#">التقييمات</a>
+            <a href="https://discord.gg/qUSafYKM" target="_blank">ربط الديسكورد</a>
+        </nav>
+    </header>
+
+    <section class="reviews-container">
+        <h1 class="reviews-title">تقييمات اللاعبين</h1>
+        <div class="reviews-list">
+
+            <div class="review-box">
+                <img src="user1.jpg" alt="تقييم 1" class="review-img">
+                <h2 class="review-name">Bra(z)ili..24</h2>
+                <p class="review-text">أفضل سيرفر زومبي لعبته حتى الان </p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="review-box">
+                <img src="user2.jpg" alt="تقييم 2" class="review-img">
+                <h2 class="review-name">Shadow+,</h2>
+                <p class="review-text">السيرفر رهيب،  ممكن تكثرو من الفعاليات</p>
+                <div class="stars">⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="review-box">
+                <img src="user3.jpg" alt="تقييم 3" class="review-img">
+                <h2 class="review-name">S7.Walid</h2>
+                <p class="review-text">افضل سيرفر زومبي اللعبة</p>
+                <div class="stars">⭐⭐⭐⭐</div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        كل الحقوق محفوظة لدى خادم سفاحين العرب للزومبي
+    </footer>
+
+</body>
+</html>

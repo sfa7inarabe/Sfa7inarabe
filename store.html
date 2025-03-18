@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتجر - سفاحين العرب</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+
+        .store-container {
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        .store-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: red;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        .items-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .item-box {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+
+        .item-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+        }
+
+        .item-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .item-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .item-price-box {
+            background: rgba(255, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            margin-top: 10px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">سفاحين العرب</div>
+        <nav>
+            <a href="web.html">الرئيسية</a>
+            <a href="rules.html">القوانين</a>
+            <a href="#">المتجر</a>
+            <a href="stars.html">التقييمات</a>
+            <a href="https://discord.gg/qUSafYKM" target="_blank">ربط الديسكورد</a>
+        </nav>
+    </header>
+
+    <section class="store-container">
+        <h1 class="store-title">المتجر الرسمي</h1>
+        <div class="items-container">
+            <div class="item-box">
+                <img src="item1.png" alt="عنصر 1" class="item-img">
+                <h2 class="item-name">VIP اشتـراك</h2>
+                <div class="item-price-box">السعر: 10 ملايين كردت للشهر</div>
+            </div>
+
+            <div class="item-box">
+                <img src="item2.png" alt="عنصر 2" class="item-img">
+                <h2 class="item-name">شراء لفلات</h2>
+                <div class="item-price-box">السعر:  10 الاف كردت للفل الواحد</div>
+            </div>
+
+            <div class="item-box">
+                <img src="item3.png" alt="عنصر 3" class="item-img">
+                <h2 class="item-name">اسم عربي</h2>
+                <div class="item-price-box">السعر:  200 الف كردت للأسبوع</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
